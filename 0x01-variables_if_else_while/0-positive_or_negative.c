@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-
 /**
- * main - print if number is positive, zero or negative
- *
- * Return: Always (Success)
+ * main - entry point
+ * Return: 0
  */
 int main(void)
 {
@@ -18,11 +16,11 @@ int main(void)
 	{	
 		printf("%i is positive\n", n);
 	}
-	else if (n == 0)
+	else if(n == 0)
 	{
 		printf("%i is zero\n", n);
 	}
-	else 
+	else if(n < 0)
 	{
 		printf("%i is negative\n", n);
 	}
