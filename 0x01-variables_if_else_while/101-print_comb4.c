@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Prints all possible different combinations in ascending order 
  * Return: always 0
