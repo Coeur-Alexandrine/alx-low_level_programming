@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdio.h>
 
 /**
  * main - Prints the alphabet in lowercase
@@ -9,7 +7,7 @@
 
 int main(void)
 {
-har c = 'a';
+char c = 'a';
 
 while (c <= 'z')
 {
