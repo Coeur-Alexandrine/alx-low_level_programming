@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints all possible different combinations in ascending order 
+ * main - Prints all possible different combinations in ascending order
  * Return: always 0
  */
 int main(void)
@@ -22,6 +22,5 @@ putchar(32);									}
 }										}
 }
 putchar(10);
-
 return (0);
 }
