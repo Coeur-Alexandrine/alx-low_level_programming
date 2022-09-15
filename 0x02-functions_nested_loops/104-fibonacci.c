@@ -6,7 +6,6 @@
  */
 
 int main(void)
-
 {
 	int count;
 	unsigned long i, j, k;
