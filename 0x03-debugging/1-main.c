@@ -9,7 +9,7 @@ int main(void)
 {
 int i;
 
-printf("Infinite loop incoming :(â—nn\n");
+printf("Infinite loop incoming :(nn\n");
 
 i = 0;
 /*
