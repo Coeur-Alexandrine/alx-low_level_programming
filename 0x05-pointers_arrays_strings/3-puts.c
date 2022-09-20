@@ -6,8 +6,7 @@
  * Description: prints a string @str
  * On success: returns no error
  */
-
-void _puts(char *@str)
+void _puts(char *str)
 {
 int i = 0;
 
