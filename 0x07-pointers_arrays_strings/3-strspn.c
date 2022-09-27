@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *  _strspn - prints the consecutive characters of s1 that are in s2
  *  @s: source string
@@ -6,13 +7,15 @@
  *
  *  Return: new string
  */
+
 unsigned int _strspn(char *s, char *accept)
+
 {
-	unsigned int i, j;
-	for (j = 0; *(s + j); j++)
-	{
-		if (*(s + j) == *(accept + i))
-			break;
-	}
-	return (j);
+unsigned int i, j;
+for (j = 0; *(s + j); j++)
+{
+if (*(s + j) == *(accept + i))
+break;
+}
+return (j);
 }
