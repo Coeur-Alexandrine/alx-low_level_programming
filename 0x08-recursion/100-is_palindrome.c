@@ -19,6 +19,7 @@ return (flag);
  * @start: start index
  * @end: end index
  * @flag: flag to indicate if a string is a palindrome
+ *
  * Return: void
  */
 void check(char *s, int start, int end, int *flag)
@@ -36,6 +37,7 @@ check(s, start + 1, end - 1, flag);
 /**
  * _strlen_recursion - calculates the length of a string
  * @s: string to be used
+ * 
  * Return: length of the string
  */
 int _strlen_recursion(char *s)
