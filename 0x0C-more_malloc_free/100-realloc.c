@@ -1,42 +1,52 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * _realloc - reallocates a memory block using malloc and free
- * @ptr: pointer to previously allocated memory
- * @old_size: size of allocated space for ptr
- * @new_size: size of a newly allocated space
- * 
- * Return: pointer to newly allocated memory, or NULL if failure
+ * simple_print_buffer - prints buffer in hexa
+ * @buffer: the address of memory to print
+ * @size: the size of the memory to print
+ * Return: Nothing.
  */
 
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+void simple_print_buffer(char *buffer, unsigned int size)
 {
-char *nptr;
 unsigned int i;
-if (new_size == old_size)
-return (ptr);
-if (ptr == NULL)
+i = 0;
+while (i < size)
 {
-nptr = malloc(new_size);
-if (nptr == NULL)
-return (NULL);
-return (nptr);
+if (i % 10)
 {
-else
-if (new_size == 0)
-{
-free(ptr);
-return (NULL);
+printf(" ");
 }
-}
-nptr = malloc(new_size);
-if (nptr == NULL)
-return (NULL);
-for (i = 0; i < old_size && i < new_size; i++)
+if (!(i % 10) && i)
 {
-nptr[i] = ((char *) ptr)[i];
+printf("\n");
 }
-free(ptr);
-return (nptr);
+printf("0x%02x", buffer[i]);
+i++;
+}
+printf("\n");
+}
+
+/**
+ * main - check the code for Holberton School students.
+ * Return: Always 0.
+ */
+
+int main(void)
+{
+char *p;
+int i;
+p = malloc(sizeof(char) * 10);
+p = _realloc(p, sizeof(char) * 10, sizeof(char) * 98);
+i = 0;
+while (i < 98)
+{
+p[i++] = 98;
+}
+simple_print_buffer(p, 98);
+free(p);
+return (0);
 }
